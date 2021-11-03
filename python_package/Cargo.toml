@@ -8,8 +8,13 @@ crate-type = ["rlib", "cdylib"]
 
 [dependencies]
 pyo3_export_pyclass = { path = ".." }
+numpy = { version = "0.14", optional = true }
 
 [dependencies.pyo3]
 version = "0.14"
 features = ["extension-module", "abi3", "abi3-py36", "multiple-pymethods"]
+optional = true
 
+[features]
+default = []
+python = ["pyo3", "numpy"]

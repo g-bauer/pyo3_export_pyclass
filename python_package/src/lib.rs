@@ -1,5 +1,5 @@
 use pyo3::prelude::*;
-use pyo3_export_pyclass::MyClass;
+use pyo3_export_pyclass::*;
 
 #[pymodule]
 pub fn python_package(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
