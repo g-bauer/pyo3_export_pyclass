@@ -1,0 +1,12 @@
+[package]
+name = "pyo3_export_pyclass"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies.pyo3]
+version = "0.14"
+features = ["extension-module", "abi3", "abi3-py36", "multiple-pymethods"]
+
