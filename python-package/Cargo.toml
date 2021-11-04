@@ -1,9 +1,10 @@
 [package]
-name = "python_package"
+name = "python-package"
 version = "0.1.0"
 edition = "2018"
 
 [lib]
+name = "python_package"
 crate-type = ["rlib", "cdylib"]
 
 [dependencies]
