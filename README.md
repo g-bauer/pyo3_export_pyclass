@@ -8,6 +8,7 @@
 - On macOS, the following has to be true to work:
   - The crate that defines the `PyClass` must not have a `#[pymodule]` function. This can be controlled with a feature (`python_module`).
   - On macOS (not tested on Windows) if the `PyClass` in `src/lib.rs` must not define a method (`asd`).
+- On Windows, it works if `ABI` features are disabled.
 
 The code in this repository will not work on macOS (not tested on windows).
 Remove the method `asd` in `src/lib.rs` and it works.
