@@ -12,6 +12,11 @@
 The code in this repository will not work on macOS (not tested on windows).
 Remove the method `asd` in `src/lib.rs` and it works.
 
+**Solution**
+
+- On macOS, removing `cdylib` and hence `extension-module` enables compilation but the root crate can no longer be made into a python package.
+
+
 ## Build wheel
 
 From the project root, type
